@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/ConwaysGameOfLife.jar"/>
+	<classpathentry kind="lib" path="lib/FindHiddenButton.jar"/>
+	<classpathentry kind="lib" path="lib/FireworkDisplay.jar"/>
+	<classpathentry kind="lib" path="lib/PixelArtMaker.jar"/>
+	<classpathentry kind="lib" path="lib/robot.jar"/>
+	<classpathentry kind="lib" path="lib/TokenHacker.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
