@@ -10,6 +10,9 @@ public class MoreArrayFun {
 	
 	public static void burp(String[] args) {
 		printAll(stwing);
+		printReverse(stwing);
+		printOther(stwing);
+		printRandom(stwing);
 	}
 
 	static Random rand = new Random();

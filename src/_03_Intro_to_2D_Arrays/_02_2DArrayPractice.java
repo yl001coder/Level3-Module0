@@ -31,31 +31,61 @@ public class _02_2DArrayPractice {
      *          6, 7, 8
      */
     public Integer[][] test1() {
+        Integer[][] ints = new Integer[3][3];
+        ints[0][0] = 0;
+        ints[0][1] = 1;
+        ints[0][2] = 2;
+        ints[1][0] = 3;
+        ints[1][1] = 4;
+        ints[1][2] = 5;
+        ints[2][0] = 6;
+        ints[2][1] = 7;
+        ints[2][2] = 8;
         
-        return null;
+        return ints;
     }
     
     /*
      * Return a 2D array that can accommodate the grid of values below:
-     *          "a", "b", "c", "d",
-     *          "e", "f", "g", "e"
+     *            0	   1    2    3
+     *          0 "a", "b", "c", "d",
+     *          1 "e", "f", "g", "e"
      */
     public String[][] test2() {
-        
-        return null;
+        String[][] chars = new String[2][4];
+        chars[0][0] = "a";
+        chars[0][1] = "b";
+        chars[0][2] = "c";
+        chars[0][3] = "d";
+        chars[1][0] = "e";
+        chars[1][1] = "f";
+        chars[1][2] = "g";
+        chars[1][3] = "e";
+        return chars;
     }
     
     /*
      * Return a 2D array that can accommodate the grid of values below:
-     *          true, false,
-     *          false, false,
-     *          false, true,
-     *          true, true,
-     *          true, false
+     *           0	   1
+     *         0 true, false,
+     *         1 false, false,
+     *         2 false, true,
+     *         3 true, true,
+     *         4 true, false
      */
     public Boolean[][] test3() {
-        
-        return null;
+    	Boolean[][] jellys = new Boolean[5][2];
+    	jellys[0][0] = true;
+    	jellys[2][1] = true;
+    	jellys[3][0] = true;
+    	jellys[3][1] = true;
+    	jellys[4][0] = true;
+    	jellys[0][1] = false;
+    	jellys[1][0] = false;
+    	jellys[1][1] = false;
+    	jellys[2][0] = false;
+    	jellys[4][1] = false;
+    	return jellys;
     }
     
     /*
@@ -63,6 +93,9 @@ public class _02_2DArrayPractice {
      * Assume all the elements in the 2D array are initialized to random ints
      * 
      * int[][] grid = new int[2][3];
+     * 
+     * 			1,4,2,3
+     * 			2,4,234,52
      * 
      * 
      * 
@@ -75,6 +108,8 @@ public class _02_2DArrayPractice {
      * 
      * Robot[][] robots = new Robot[4][2];
      * 
+     * 			robot, robot, robot, robot
+     * 			robot, robot, robot, robot
      * 
      * 
      * Show your teacher the grid you created
@@ -87,7 +122,7 @@ public class _02_2DArrayPractice {
     public Object test4() {
         Object[][] objects = { {null, null, null, null}, {null, null, null, new Object()} };
         
-        return null;
+        return objects[1][3];
     }
     
     /* Given the array of Objects below, return the element that is not null
@@ -97,7 +132,7 @@ public class _02_2DArrayPractice {
     public Object test5() {
         Object[][] objects = { {null, null, new Object(), null}, {null, null, null, null} };
         
-        return null;
+        return objects[0][3];
     }
     
     /*
@@ -106,8 +141,14 @@ public class _02_2DArrayPractice {
      */
     public Integer test6() {
         int[][] nums = { {8, 7, 6, 5}, {4, 3}, {2, 1, 0} };
+        int num = 0;
+        for(int i = 0; i < 4; i++) {
+        	
+        	num = num + nums[0][i];
+        }
         
-        return null;
+        
+        return num;
     }
     
     /*
@@ -115,9 +156,13 @@ public class _02_2DArrayPractice {
      * first column (column 0)
      */
     public Integer test7() {
-        int[][] nums = { {8, 7, 6, 5}, {4, 3}, {2, 1, 0} };
-        
-        return null;
+        int num = 0;
+    	int[][] nums = { {8, 7, 6, 5}, {4, 3}, {2, 1, 0} };
+        for(int i = 0; i < 3; i++) {
+        	num = num + nums[i][0];
+        }
+      
+        return num;
     }
     
     /*
@@ -125,7 +170,7 @@ public class _02_2DArrayPractice {
      * specified row
      */
     public Integer getSumByRow(int[][] matrix, int row) {
-        
+        	
         return null;
     }
     
@@ -158,7 +203,7 @@ public class _02_2DArrayPractice {
      *    boundaries, return null.
      */
     public Integer getEastNeighbor(int[][] matrix, int row, int col) {
-        
+        matrix[row][col];
         return null;
     }
     
