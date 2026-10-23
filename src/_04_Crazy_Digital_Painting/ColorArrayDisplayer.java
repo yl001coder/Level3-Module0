@@ -28,4 +28,5 @@ public class ColorArrayDisplayer {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setVisible(true);	
     }
+    
 }

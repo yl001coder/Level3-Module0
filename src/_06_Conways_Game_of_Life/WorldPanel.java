@@ -17,7 +17,7 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
     private int cellSize;
 
     private Timer timer;
-
+    Cell[][] cells;
     // 1. Create a 2D array of Cells. Do not initialize it.
 
 

@@ -8,13 +8,17 @@ public class CrazyDigitalPainting {
 	static final int WIDTH = 500;
     // 2. Create a 2D array of Color objects. You will need to import
     //    java.awt.Color. Initialize the size of the array using the 
-    //    integers created in step 1.
+    //    integers created in step 1
 	Color[][] colors = new Color[HEIGHT][WIDTH];
 
 
     public CrazyDigitalPainting() {
         // 3. Open the crazy_digital_painting.png file and look at the image.
-
+    	for(int i = 0; i<500; i++) {
+    		for(int j = 0; j<500; j++) {
+    			colors[i][j] = new Color(i*5%256,(i+j)%256,j*5%256);
+    		}
+    	}
         // 4. Iterate through the 2D array and initialize each Color object
         //    to a new color. The sample image was created using the following 
         //    pattern:
@@ -27,6 +31,7 @@ public class CrazyDigitalPainting {
     }
 
     public static void main(String[] args) {
-        new CrazyDigitalPainting();
+       CrazyDigitalPainting painting = new CrazyDigitalPainting();
+       ColorArrayDisplayer.displayColorsAsImage(painting.colors);
     }
 }
